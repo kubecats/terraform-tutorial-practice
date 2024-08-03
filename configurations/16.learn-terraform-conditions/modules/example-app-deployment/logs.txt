@@ -1,0 +1,24 @@
+2024-07-23T13:35:04.217+0900 [INFO]  Terraform version: 1.2.9
+2024-07-23T13:35:04.218+0900 [DEBUG] using github.com/hashicorp/go-tfe v1.0.0
+2024-07-23T13:35:04.218+0900 [DEBUG] using github.com/hashicorp/hcl/v2 v2.12.0
+2024-07-23T13:35:04.218+0900 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2024-07-23T13:35:04.218+0900 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2024-07-23T13:35:04.218+0900 [DEBUG] using github.com/zclconf/go-cty v1.11.0
+2024-07-23T13:35:04.218+0900 [INFO]  Go runtime version: go1.18.1
+2024-07-23T13:35:04.218+0900 [INFO]  CLI args: []string{"/opt/homebrew/Cellar/tfenv/3.0.0/versions/1.2.9/terraform", "fmt"}
+2024-07-23T13:35:04.218+0900 [TRACE] Stdout is a terminal of width 123
+2024-07-23T13:35:04.218+0900 [TRACE] Stderr is a terminal of width 123
+2024-07-23T13:35:04.218+0900 [TRACE] Stdin is a terminal
+2024-07-23T13:35:04.218+0900 [DEBUG] Attempting to open CLI config file: /Users/lhs/.terraformrc
+2024-07-23T13:35:04.218+0900 [INFO]  Loading CLI configuration from /Users/lhs/.terraformrc
+2024-07-23T13:35:04.218+0900 [INFO]  Loading CLI configuration from /Users/lhs/.terraform.d/credentials.tfrc.json
+2024-07-23T13:35:04.218+0900 [DEBUG] checking for credentials in "/Users/lhs/.terraform.d/plugins"
+2024-07-23T13:35:04.218+0900 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-07-23T13:35:04.218+0900 [DEBUG] will search for provider plugins in /Users/lhs/.terraform.d/plugins
+2024-07-23T13:35:04.218+0900 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/template v2.2.0 for darwin_arm64 at /Users/lhs/.terraform.d/plugins/registry.terraform.io/hashicorp/template/2.2.0/darwin_arm64
+2024-07-23T13:35:04.218+0900 [DEBUG] ignoring non-existing provider search directory /Users/lhs/Library/Application Support/io.terraform/plugins
+2024-07-23T13:35:04.218+0900 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2024-07-23T13:35:04.218+0900 [INFO]  CLI command args: []string{"fmt"}
+2024-07-23T13:35:04.219+0900 [TRACE] terraform fmt: looking for files in .
+2024-07-23T13:35:04.219+0900 [TRACE] terraform fmt: Formatting main.tf
+2024-07-23T13:35:04.221+0900 [TRACE] terraform fmt: Formatting variables.tf

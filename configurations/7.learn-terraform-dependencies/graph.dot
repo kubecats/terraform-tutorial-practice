@@ -1,0 +1,24 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] aws_eip.ip (expand)" [label = "aws_eip.ip", shape = "box"]
+		"[root] aws_instance.example_a (expand)" [label = "aws_instance.example_a", shape = "box"]
+		"[root] aws_instance.example_b (expand)" [label = "aws_instance.example_b", shape = "box"]
+		"[root] data.aws_ami.amazon_linux (expand)" [label = "data.aws_ami.amazon_linux", shape = "box"]
+		"[root] output.ec2_elastic_ip" [label = "output.ec2_elastic_ip", shape = "note"]
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" [label = "provider[\"registry.terraform.io/hashicorp/aws\"]", shape = "diamond"]
+		"[root] var.aws_region" [label = "var.aws_region", shape = "note"]
+		"[root] aws_eip.ip (expand)" -> "[root] aws_instance.example_a (expand)"
+		"[root] aws_instance.example_a (expand)" -> "[root] data.aws_ami.amazon_linux (expand)"
+		"[root] aws_instance.example_b (expand)" -> "[root] data.aws_ami.amazon_linux (expand)"
+		"[root] data.aws_ami.amazon_linux (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] output.ec2_elastic_ip" -> "[root] aws_eip.ip (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_eip.ip (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_instance.example_b (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" -> "[root] var.aws_region"
+		"[root] root" -> "[root] output.ec2_elastic_ip"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+	}
+}
+

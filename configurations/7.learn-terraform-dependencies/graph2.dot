@@ -1,0 +1,77 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] aws_eip.ip (expand)" [label = "aws_eip.ip", shape = "box"]
+		"[root] aws_instance.example_a (expand)" [label = "aws_instance.example_a", shape = "box"]
+		"[root] aws_instance.example_b (expand)" [label = "aws_instance.example_b", shape = "box"]
+		"[root] aws_instance.example_c (expand)" [label = "aws_instance.example_c", shape = "box"]
+		"[root] aws_s3_bucket.example (expand)" [label = "aws_s3_bucket.example", shape = "box"]
+		"[root] data.aws_ami.amazon_linux (expand)" [label = "data.aws_ami.amazon_linux", shape = "box"]
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" [label = "module.example_sqs_queue.aws_sqs_queue.this", shape = "box"]
+		"[root] module.example_sqs_queue.data.aws_arn.this (expand)" [label = "module.example_sqs_queue.data.aws_arn.this", shape = "box"]
+		"[root] output.ec2_elastic_ip" [label = "output.ec2_elastic_ip", shape = "note"]
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" [label = "provider[\"registry.terraform.io/hashicorp/aws\"]", shape = "diamond"]
+		"[root] var.aws_region" [label = "var.aws_region", shape = "note"]
+		"[root] aws_eip.ip (expand)" -> "[root] aws_instance.example_a (expand)"
+		"[root] aws_instance.example_a (expand)" -> "[root] data.aws_ami.amazon_linux (expand)"
+		"[root] aws_instance.example_b (expand)" -> "[root] data.aws_ami.amazon_linux (expand)"
+		"[root] aws_instance.example_c (expand)" -> "[root] aws_s3_bucket.example (expand)"
+		"[root] aws_instance.example_c (expand)" -> "[root] data.aws_ami.amazon_linux (expand)"
+		"[root] aws_s3_bucket.example (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_ami.amazon_linux (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.example_sqs_queue (close)" -> "[root] module.example_sqs_queue.output.sqs_queue_arn (expand)"
+		"[root] module.example_sqs_queue (close)" -> "[root] module.example_sqs_queue.output.sqs_queue_id (expand)"
+		"[root] module.example_sqs_queue (close)" -> "[root] module.example_sqs_queue.output.sqs_queue_name (expand)"
+		"[root] module.example_sqs_queue (expand)" -> "[root] aws_instance.example_c (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.content_based_deduplication (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.create (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.deduplication_scope (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.delay_seconds (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.fifo_queue (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.fifo_throughput_limit (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.kms_data_key_reuse_period_seconds (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.kms_master_key_id (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.max_message_size (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.message_retention_seconds (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.name (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.name_prefix (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.policy (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.receive_wait_time_seconds (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.redrive_allow_policy (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.redrive_policy (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.tags (expand)"
+		"[root] module.example_sqs_queue.aws_sqs_queue.this (expand)" -> "[root] module.example_sqs_queue.var.visibility_timeout_seconds (expand)"
+		"[root] module.example_sqs_queue.data.aws_arn.this (expand)" -> "[root] module.example_sqs_queue.aws_sqs_queue.this (expand)"
+		"[root] module.example_sqs_queue.output.sqs_queue_arn (expand)" -> "[root] module.example_sqs_queue.aws_sqs_queue.this (expand)"
+		"[root] module.example_sqs_queue.output.sqs_queue_id (expand)" -> "[root] module.example_sqs_queue.aws_sqs_queue.this (expand)"
+		"[root] module.example_sqs_queue.output.sqs_queue_name (expand)" -> "[root] module.example_sqs_queue.data.aws_arn.this (expand)"
+		"[root] module.example_sqs_queue.var.content_based_deduplication (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.create (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.deduplication_scope (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.delay_seconds (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.fifo_queue (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.fifo_throughput_limit (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.kms_data_key_reuse_period_seconds (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.kms_master_key_id (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.max_message_size (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.message_retention_seconds (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.name (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.name_prefix (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.policy (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.receive_wait_time_seconds (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.redrive_allow_policy (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.redrive_policy (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.tags (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] module.example_sqs_queue.var.visibility_timeout_seconds (expand)" -> "[root] module.example_sqs_queue (expand)"
+		"[root] output.ec2_elastic_ip" -> "[root] aws_eip.ip (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_eip.ip (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_instance.example_b (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] module.example_sqs_queue.data.aws_arn.this (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" -> "[root] var.aws_region"
+		"[root] root" -> "[root] module.example_sqs_queue (close)"
+		"[root] root" -> "[root] output.ec2_elastic_ip"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+	}
+}
+

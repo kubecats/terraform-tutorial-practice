@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"ec2_instances","Source":"registry.terraform.io/terraform-aws-modules/ec2-instance/aws","Version":"4.3.0","Dir":".terraform/modules/ec2_instances"},{"Key":"vpc","Source":"registry.terraform.io/terraform-aws-modules/vpc/aws","Version":"3.18.1","Dir":".terraform/modules/vpc"}]}

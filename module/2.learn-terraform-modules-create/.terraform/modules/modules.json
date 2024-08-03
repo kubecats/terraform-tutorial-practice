@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"website_s3_bucket","Source":"./modules/aws-s3-static-website-bucket","Dir":"modules/aws-s3-static-website-bucket"}]}

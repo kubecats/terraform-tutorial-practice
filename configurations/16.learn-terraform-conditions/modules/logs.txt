@@ -1,0 +1,74 @@
+2024-07-23T13:12:56.927+0900 [INFO]  Terraform version: 1.2.9
+2024-07-23T13:12:56.927+0900 [DEBUG] using github.com/hashicorp/go-tfe v1.0.0
+2024-07-23T13:12:56.927+0900 [DEBUG] using github.com/hashicorp/hcl/v2 v2.12.0
+2024-07-23T13:12:56.927+0900 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2024-07-23T13:12:56.927+0900 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2024-07-23T13:12:56.927+0900 [DEBUG] using github.com/zclconf/go-cty v1.11.0
+2024-07-23T13:12:56.927+0900 [INFO]  Go runtime version: go1.18.1
+2024-07-23T13:12:56.927+0900 [INFO]  CLI args: []string{"/opt/homebrew/Cellar/tfenv/3.0.0/versions/1.2.9/terraform", "plsn"}
+2024-07-23T13:12:56.927+0900 [TRACE] Stdout is a terminal of width 123
+2024-07-23T13:12:56.927+0900 [TRACE] Stderr is a terminal of width 123
+2024-07-23T13:12:56.927+0900 [TRACE] Stdin is a terminal
+2024-07-23T13:12:56.927+0900 [DEBUG] Attempting to open CLI config file: /Users/lhs/.terraformrc
+2024-07-23T13:12:56.927+0900 [INFO]  Loading CLI configuration from /Users/lhs/.terraformrc
+2024-07-23T13:12:56.929+0900 [INFO]  Loading CLI configuration from /Users/lhs/.terraform.d/credentials.tfrc.json
+2024-07-23T13:12:56.930+0900 [DEBUG] checking for credentials in "/Users/lhs/.terraform.d/plugins"
+2024-07-23T13:12:56.930+0900 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-07-23T13:12:56.930+0900 [DEBUG] will search for provider plugins in /Users/lhs/.terraform.d/plugins
+2024-07-23T13:12:56.931+0900 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/template v2.2.0 for darwin_arm64 at /Users/lhs/.terraform.d/plugins/registry.terraform.io/hashicorp/template/2.2.0/darwin_arm64
+2024-07-23T13:12:56.931+0900 [DEBUG] ignoring non-existing provider search directory /Users/lhs/Library/Application Support/io.terraform/plugins
+2024-07-23T13:12:56.931+0900 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2024-07-23T13:12:56.932+0900 [INFO]  CLI command args: []string{"plsn"}
+2024-07-23T13:12:58.795+0900 [INFO]  Terraform version: 1.2.9
+2024-07-23T13:12:58.796+0900 [DEBUG] using github.com/hashicorp/go-tfe v1.0.0
+2024-07-23T13:12:58.796+0900 [DEBUG] using github.com/hashicorp/hcl/v2 v2.12.0
+2024-07-23T13:12:58.796+0900 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2024-07-23T13:12:58.796+0900 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2024-07-23T13:12:58.796+0900 [DEBUG] using github.com/zclconf/go-cty v1.11.0
+2024-07-23T13:12:58.796+0900 [INFO]  Go runtime version: go1.18.1
+2024-07-23T13:12:58.796+0900 [INFO]  CLI args: []string{"/opt/homebrew/Cellar/tfenv/3.0.0/versions/1.2.9/terraform", "plan"}
+2024-07-23T13:12:58.796+0900 [TRACE] Stdout is a terminal of width 123
+2024-07-23T13:12:58.796+0900 [TRACE] Stderr is a terminal of width 123
+2024-07-23T13:12:58.796+0900 [TRACE] Stdin is a terminal
+2024-07-23T13:12:58.796+0900 [DEBUG] Attempting to open CLI config file: /Users/lhs/.terraformrc
+2024-07-23T13:12:58.796+0900 [INFO]  Loading CLI configuration from /Users/lhs/.terraformrc
+2024-07-23T13:12:58.796+0900 [INFO]  Loading CLI configuration from /Users/lhs/.terraform.d/credentials.tfrc.json
+2024-07-23T13:12:58.796+0900 [DEBUG] checking for credentials in "/Users/lhs/.terraform.d/plugins"
+2024-07-23T13:12:58.796+0900 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-07-23T13:12:58.796+0900 [DEBUG] will search for provider plugins in /Users/lhs/.terraform.d/plugins
+2024-07-23T13:12:58.796+0900 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/template v2.2.0 for darwin_arm64 at /Users/lhs/.terraform.d/plugins/registry.terraform.io/hashicorp/template/2.2.0/darwin_arm64
+2024-07-23T13:12:58.796+0900 [DEBUG] ignoring non-existing provider search directory /Users/lhs/Library/Application Support/io.terraform/plugins
+2024-07-23T13:12:58.797+0900 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2024-07-23T13:12:58.797+0900 [INFO]  CLI command args: []string{"plan"}
+2024-07-23T13:12:58.798+0900 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2024-07-23T13:12:58.798+0900 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2024-07-23T13:12:58.799+0900 [DEBUG] New state was assigned lineage "5f0233d5-75ef-664f-d2ed-9092a8d26eec"
+2024-07-23T13:12:58.799+0900 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2024-07-23T13:12:58.799+0900 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2024-07-23T13:12:58.799+0900 [DEBUG] checking for provisioner in "."
+2024-07-23T13:12:58.799+0900 [DEBUG] checking for provisioner in "/opt/homebrew/Cellar/tfenv/3.0.0/versions/1.2.9"
+2024-07-23T13:12:58.799+0900 [DEBUG] checking for provisioner in "/Users/lhs/.terraform.d/plugins"
+2024-07-23T13:12:58.799+0900 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2024-07-23T13:12:58.802+0900 [INFO]  backend/local: starting Plan operation
+2024-07-23T13:34:54.917+0900 [INFO]  Terraform version: 1.2.9
+2024-07-23T13:34:54.917+0900 [DEBUG] using github.com/hashicorp/go-tfe v1.0.0
+2024-07-23T13:34:54.917+0900 [DEBUG] using github.com/hashicorp/hcl/v2 v2.12.0
+2024-07-23T13:34:54.917+0900 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2024-07-23T13:34:54.917+0900 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2024-07-23T13:34:54.917+0900 [DEBUG] using github.com/zclconf/go-cty v1.11.0
+2024-07-23T13:34:54.917+0900 [INFO]  Go runtime version: go1.18.1
+2024-07-23T13:34:54.917+0900 [INFO]  CLI args: []string{"/opt/homebrew/Cellar/tfenv/3.0.0/versions/1.2.9/terraform", "fmt"}
+2024-07-23T13:34:54.917+0900 [TRACE] Stdout is a terminal of width 123
+2024-07-23T13:34:54.917+0900 [TRACE] Stderr is a terminal of width 123
+2024-07-23T13:34:54.917+0900 [TRACE] Stdin is a terminal
+2024-07-23T13:34:54.917+0900 [DEBUG] Attempting to open CLI config file: /Users/lhs/.terraformrc
+2024-07-23T13:34:54.917+0900 [INFO]  Loading CLI configuration from /Users/lhs/.terraformrc
+2024-07-23T13:34:54.918+0900 [INFO]  Loading CLI configuration from /Users/lhs/.terraform.d/credentials.tfrc.json
+2024-07-23T13:34:54.918+0900 [DEBUG] checking for credentials in "/Users/lhs/.terraform.d/plugins"
+2024-07-23T13:34:54.918+0900 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-07-23T13:34:54.918+0900 [DEBUG] will search for provider plugins in /Users/lhs/.terraform.d/plugins
+2024-07-23T13:34:54.918+0900 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/template v2.2.0 for darwin_arm64 at /Users/lhs/.terraform.d/plugins/registry.terraform.io/hashicorp/template/2.2.0/darwin_arm64
+2024-07-23T13:34:54.918+0900 [DEBUG] ignoring non-existing provider search directory /Users/lhs/Library/Application Support/io.terraform/plugins
+2024-07-23T13:34:54.918+0900 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2024-07-23T13:34:54.918+0900 [INFO]  CLI command args: []string{"fmt"}
+2024-07-23T13:34:54.918+0900 [TRACE] terraform fmt: looking for files in .

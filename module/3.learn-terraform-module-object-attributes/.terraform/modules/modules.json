@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"website_s3_bucket","Source":"./modules/aws-s3-static-website","Dir":"modules/aws-s3-static-website"},{"Key":"website_s3_bucket.template_files","Source":"registry.terraform.io/hashicorp/dir/template","Version":"1.0.2","Dir":".terraform/modules/website_s3_bucket.template_files"},{"Key":"","Source":"","Dir":"."}]}
